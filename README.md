@@ -86,3 +86,23 @@ Contributions of any kind are most welcome! For example:
 * Infrastructure-related tasks, such as a way of automatically compiling and releasing every custom component as its own JS+CSS files, so users can pick-and-choose which components they want to embed in their own apps
 
 If you need any help, feel free to [open an issue](https://github.com/jreyesr/streamsync-widgets/issues) and ask away!
+
+### Storybook
+
+The custom components are integrated with [Storybook](https://storybook.js.org/) to showcase them in different states. For example, here's the Star Rating component:
+
+![a screenshot of the Storybook UI, showing the StarRating component with its color overridden](images/image.png)
+
+To run the Storybook server:
+
+```bash
+npm run storybook
+```
+
+To add new stories, refer to the `stories/StarRating.stories.ts` file. The main points to be aware of are:
+
+* As is tradition in Storybook, you write "stories" for a component. Each Story is meant to showcase a specific configuration of the component. For example, for a button you may want to write Stories that show the button in its normal state, disabled, large, with a loading spinner, and more
+* Since Streamsync doesn't receive data via standard Vue props, you must use [the `args` parameter](https://storybook.js.org/docs/vue/writing-stories/args) differently. Instead of providing an object with Vue props, provide an object with the keys `props` and `styles`:
+    * The `props` field should be an object with all the configuration values that go on the Properties section to the right of the Streamsync Builder UI
+    * The `styles` fields should be an object with all the configurations that have `applyStyleVariable: true` in the component's `streamsync` field, i.e. the configurations that will be served by Steampipe as CSS vars
+* The render function for Storybook is fairly generic. Use [the one in Storybook's starter docs](https://storybook.js.org/docs/vue/get-started/whats-a-story) or use and modify one from an already-existing `.stories.ts` file
