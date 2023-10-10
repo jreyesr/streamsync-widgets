@@ -6,7 +6,6 @@
                 {{ starFor(i) }}
             </span>
         </div>
-        <small>{{ fields.normalSize.value }} -> {{ fields.hoverSize.value }}</small>
     </div>
 </template>
 
