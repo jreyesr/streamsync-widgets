@@ -13,21 +13,18 @@ const preview: Preview = {
 		},
 	},
 	decorators: [
-		(story, { args }) => {
+		(story, { args, parameters }) => {
 			// Streamsync expects the component's configurable params to be passed as an Object with Ref values
 			let fields = {};
-			for (const k of Object.keys(args.props)) {
-				fields[k] = ref(args.props[k]);
-			}
-			for (const k of Object.keys(args.styles)) {
-				fields[k] = ref(args.styles[k]);
+			for (const k of Object.keys(args)) {
+				fields[k] = ref(args[k]);
 			}
 
 			// For each style, build up the CSS vars and plop them on a wrapper object
 			let styles = {};
-			for (const k of Object.keys(args.styles)) {
-				styles["--" + k] = args.styles[k];
-			}
+			for (const k of parameters.styleProps) {
+				styles["--" + k] = args[k];
+			}	
 
 			return {
 				components: { story },
