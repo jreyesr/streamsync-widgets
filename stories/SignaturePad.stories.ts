@@ -23,7 +23,6 @@ export const Simple: Story = {
 	args: {
 		height: "200px",
 		accentColor: "black",
-		containerBackgroundColor: "lightgray"
+		containerBackgroundColor: "lightgray",
 	},
 };
-

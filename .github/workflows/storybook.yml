@@ -1,7 +1,7 @@
 name: Build and Deploy
 on: 
   push:
-    paths: ["stories/**", "*.vue"]
+    # paths: ["stories/**", "*.vue"]
 
 jobs:
   build-and-deploy:
@@ -23,6 +23,10 @@ jobs:
         run: |
           npm install
           npm run build-storybook
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: docs
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
