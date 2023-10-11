@@ -22,9 +22,6 @@ export const Simple: Story = {
 	render,
 	args: {
 		height: "200px",
-		// currentStars: 2,
-		// normalSize: "x-large",
-		// hoverSize: "xx-large",
 		accentColor: "black",
 		containerBackgroundColor: "lightgray"
 	},
