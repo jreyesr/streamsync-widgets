@@ -10,7 +10,12 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "signature_pad": "^4.1.6",
+		"sortablejs": "^1.15.0",
+		"sortablejs-vue3": "^1.2.9"
+  },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.4.6",
     "@storybook/addon-interactions": "^7.4.6",
