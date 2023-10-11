@@ -9,6 +9,7 @@ export default defineConfig({
       alias: {
         '../../injectionKeys': path.resolve(__dirname, './injectionKeys'),
         '../injectionKeys': path.resolve(__dirname, './injectionKeys'),
+        '../streamsyncTypes': path.resolve(__dirname, './streamsyncTypes'),
       },
     },
     plugins: [vue()]
