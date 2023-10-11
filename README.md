@@ -1,5 +1,7 @@
 # streamsync-widgets
 
+[![badge that links to the demo](https://img.shields.io/badge/Demo-blue?logo=storybook&style=for-the-badge)](https://jreyesr.github.io/streamsync-widgets)
+
 This repo contains a bunch of [Streamsync](https://www.streamsync.cloud/) [custom components](https://www.streamsync.cloud/custom-components.html), that you can use in your own Streamsync applications.
 
 Streamsync comes with [a set of Components](https://www.streamsync.cloud/component-list.html) that you can use to build UIs. For instance, there's the standard Form inputs (text field, text area, number, slider, date picker, single/multi-dropdown, file picker), buttons, a Timer, a webcam capture element, a [Repeater](https://www.streamsync.cloud/repeater.html), a table and layout elements (horizontal/vertical stacks, columns). This repo holds some more specialized elements, that don't necessarily belong on a general-purpose UI builder.
@@ -28,6 +30,10 @@ Note: these instructions are more or less the same as those [in Streamsync's doc
 1. Ensure that you also include the `extensions` directory when running your app without the editor (via `streamsync run`, or [in Docker](https://www.streamsync.cloud/deploy-with-docker.html))
 
 ## List of widgets
+
+[![badge that links to the demo](https://img.shields.io/badge/Demo-blue?logo=storybook&style=for-the-badge)](https://jreyesr.github.io/streamsync-widgets)
+
+Browse [the Storybook that contains the components](https://jreyesr.github.io/streamsync-widgets) to play with some of the components.
 
 ### Loading Overlay
 
