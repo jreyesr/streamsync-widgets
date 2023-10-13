@@ -7,6 +7,7 @@ import StarRating from './StarRating.vue'
 import LoadingOverlay from './LoadingOverlay.vue';
 import SignaturePad from './SignaturePad.vue';
 import SortableList from './SortableList.vue';
+import Agenda from './Agenda.vue';
 
 
 // Export an object with the ids and the templates as default
@@ -18,4 +19,5 @@ export default {
     "loadingoverlay": LoadingOverlay,
     "signaturepad": SignaturePad,
     "sortablelist": SortableList,
+    "agenda": Agenda,
 }

@@ -81,6 +81,14 @@ A more detailed description of the component [is here](https://jreyesr.github.io
 
 ![an animation of the Rating component, displaying the two-way binding between star ratings, a Slider and a Metric](https://jreyesr.github.io/posts/streamsync-custom-components/_resources/linked.gif)
 
+### Agenda
+
+File: `Agenda.vue`
+
+Renders a calendar in weekly view, which can display events (each with the time interval that it occurs on). It's similar to Thunderbird's calendar view.
+
+![a screenshot of the Agenda component showing two non-overlapping events](./images/agenda.png)
+
 ## Contributing
 
 Contributions of any kind are most welcome! For example:

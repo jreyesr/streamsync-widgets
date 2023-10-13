@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "custom.dev": "vite --config vite.config.custom.js",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build -o docs"
   },
@@ -13,8 +14,9 @@
   "license": "Apache-2.0",
   "dependencies": {
     "signature_pad": "^4.1.6",
-		"sortablejs": "^1.15.0",
-		"sortablejs-vue3": "^1.2.9"
+    "sortablejs": "^1.15.0",
+    "sortablejs-vue3": "^1.2.9",
+    "vue-cal": "^4.8.1"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.4.6",
